@@ -1,0 +1,93 @@
+/* Esto serían los estilos básicos para todo lo que se trata de la tipografía*/
+h1 {
+  font-size: 3.5rem;
+  color: rgb(109, 86, 175);
+  font-weight: bolder;
+  text-align: center;
+  font-family: Georgia, serif;
+}
+h2 {
+  font-size: 2.5rem;
+}
+
+p {
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: rgb(192, 192, 248);
+}
+
+section {
+  color: rgb(192, 192, 248);
+}
+
+/*Esto serían los estilos de la barra de navegación*/
+.menu {
+  position: fixed;
+  width: 100vw;
+  height: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img#my-logo {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 4rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(192, 192, 248);
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+.nav-hbmenu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.nav-hbmenu button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 1.5rem;
+}
+
+.nav-hbmenu i {
+  display: flex;
+  align-items: center;
+  color: rgb(192, 192, 248);
+  font-size: 1.5rem;
+}
+
+header {
+  height: 4rem;
+  width: 100vw;
+  top: 0%;
+  background-color: rgb(109, 86, 175);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
