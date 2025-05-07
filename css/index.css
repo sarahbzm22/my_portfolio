@@ -1,0 +1,12 @@
+@import url("http://meyerweb.com/eric/tools/css/reset/reset.css"); /* CSS Reset para compatibilidad entre navegadores */
+@import url("reset.css");
+@import url("main.css");
+@import url("theme.css");
+@import url("root.css");
+@import url("types.css");
+@import url("base.css");
+@import url("grids.css");
+@import url("nav.css");
+@import url("parallax.css");
+@import url("typewriter.css");
+@import url("media-queries.css");

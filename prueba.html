@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SBZM Portfolio</title>
+    <meta
+      name="description"
+      content="Aquí podrás ver todos los trabajos que he realizado como diseñadora gráfica."
+    />
+    <meta name="author" content="Sarah B." />
+    <meta name="keywords" content="portfolio, diseño gráfico, trabajos" />
+    <link rel="stylesheet" href="css/index.css" />
+
+    <!--esto de abajo es para los favicons-->
+    <link
+      rel="icon"
+      type="image/png"
+      href="/assets/icons/favicons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="/assets/icons/favicons/favicon.svg"
+    />
+    <link rel="shortcut icon" href="/assets/icons/favicons/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/icons/favicons/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="/assets/icons/favicons/site.webmanifest" />
+    <!--aquí termina el código para el favicon-->
+    <script
+      src="https://kit.fontawesome.com/b1666dd585.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <!-- principio del menú -->
+      <nav class="menu">
+        <div class="nav-logo">
+          <img src="assets/images/Favicon2.png" alt="SBZM" id="my-logo" />
+        </div>
+        <!--esto de arriba es el logo-->
+        <div class="nav-links">
+          <a href="#about-me">Sobre mí</a>
+          <a href="#projects">Proyectos</a>
+          <a href="mailto:sbzm.jobs@gmail.com">Contacto</a>
+        </div>
+        <div class="nav-hbmenu">
+          <button id="hbmenu">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <!--esto de arriba es el icono de la hamburguesa, por ejemplo-->
+        <!--fin del menú-->
+      </nav>
+      <!--esto es sería el botón de cambio de tema, claro/oscuro-->
+      <nav class="colorchange-button">
+        <label for="theme-toggle" class="theme-toggle-button"
+          >Toggle Theme
+        </label>
+        <input class="nav-menu-btn" type="checkbox" id="nav-menu-btn" hidden />
+        <label class="nav-menu" for="nav-menu-btn">
+          <span class="nav-menu-icon"></span>
+        </label>
+      </nav>
+      <!--aquí acaba el codigo del botón de claro/oscuro-->
+    </header>
+    <!--esto de arriba es el header, que incluye el logo, el menú de navegación y el botón de cambio de tema-->
+    <main>
+      <div class="web-name">
+        <h1>SBZM Portfolio</h1>
+        <button>
+          Ver más
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <section id="about">
+        <h2>Sobre mí</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+          suscipit, nunc nec ultricies ultricies, nunc nunc ultricies nunc, nec
+          ultricies nunc nunc nec. Nullam suscipit, nunc nec ultricies
+          ultricies, nunc nunc ultricies nunc, nec ultricies nunc nunc nec.
+          Nullam suscipit, nunc nec ultricies ultricies, nunc nunc ultricies
+          nunc, nec ultricies nunc nunc nec. Nullam suscipit, nunc nec ultricies
+          ultricies, nunc nunc ultricies nunc, nec ultricies nunc nunc nec.
+        </p>
+      </section>
+      <section id="projects">
+        <h2>Proyectos</h2>
+        <article>
+          <h3>Proyecto 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            suscipit, nunc nec ultricies ultricies, nunc nunc ultricies nunc,
+            nec ultricies nunc nunc nec. Nullam suscipit, nunc nec ultricies
+            ultricies, nunc nunc ultricies nunc, nec ultricies nunc nunc nec.
+            Nullam suscipit, nunc nec ultricies ultricies, nunc nunc ultricies
+            nunc, nec ultricies nunc nunc nec. Nullam suscipit, nunc nec
+            ultricies ultricies, nunc nunc ultricies nunc, nec ultricies nunc
+            nunc nec.
+          </p>
+        </article>
+        <article>
+          <h3>Proyecto 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+            suscipit, nunc nec ultricies ultricies, nunc
+          </p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
