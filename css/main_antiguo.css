@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  /* background-color: rgb(192, 192, 248); */
+  overflow-x: hidden;
+  /* background-image: url("https://i.pinimg.com/736x/31/4a/ac/314aac3374d508843aeb776a3fede38e.jpg"); */
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: #86b3d3;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu {
+  position: fixed;
+  width: 100vw;
+  height: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img#my-logo {
+  width: 3rem;
+  height: auto;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.nav-logo h2 {
+  text-decoration: none;
+  color: #d4c5ea;
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+
+.name_web {
+  display: flex;
+  align-items: center;
+}
+
+.name_web {
+  text-decoration: none;
+  color: #d4c5ea;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.nav-hbmenu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgb(50, 34, 95);
+  font-size: 1.5rem;
+}
+
+.nav-hbmenu button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 1.3rem;
+}
+
+.nav-hbmenu i {
+  display: flex;
+  align-items: center;
+  color: rgb(192, 192, 248);
+  font-size: 1.5rem;
+}
+
+header {
+  height: 4rem;
+  width: 100vw;
+  top: 0%;
+  left: 0%;
+  background-color: rgb(109, 86, 175);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  z-index: 1000;
+}
