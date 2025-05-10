@@ -1,0 +1,77 @@
+/* Estilos para pantallas grandes */
+@media (min-width: 1024px) {
+  .home-title {
+    font-size: clamp(48px, 5vw, 140px);
+  }
+  .home-subtitle {
+    font-size: clamp(28px, 4vw, 45px);
+  }
+  .home-description {
+    font-size: clamp(18px, 2vw, 24px);
+  }
+}
+/* Estilos para pantallas grandes */
+
+/* Pantallas medianas */
+@media (max-width: 1023px) and (min-width: 768px) {
+  .main-header {
+    padding: 4rem 6rem;
+  }
+
+  .home {
+    padding: 4rem 6rem;
+  }
+
+  .main-nav {
+    width: 500px;
+    gap: 100px;
+  }
+
+  .home-title {
+    font-size: clamp(36px, 6vw, 90px);
+  }
+  .home-subtitle {
+    font-size: clamp(24px, 4vw, 45px);
+  }
+  .home-description {
+    font-size: clamp(16px, 2vw, 20px);
+  }
+}
+/* Pantallas medianas */
+
+/* Pantallas pequeñas */
+@media (max-width: 767px) {
+  .main-header {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .home {
+    padding: 2rem;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .main-nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .home-title {
+    font-size: clamp(28px, 8vw, 70px);
+  }
+  .home-subtitle {
+    font-size: clamp(18px, 6vw, 30px);
+  }
+  .home-description {
+    font-size: clamp(14px, 4vw, 18px);
+  }
+}
+/* Pantallas pequeñas */

@@ -1,0 +1,124 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5.75rem 11.5rem;
+}
+
+.logo-container {
+  width: 55px;
+  height: 55px;
+  border: 3.5px solid var(--third-color);
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 2px 8px var(--third-color);
+}
+
+.logo-container img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.home {
+  text-align: left;
+  padding-bottom: 184px;
+}
+
+.home-title {
+  font-weight: 900;
+  color: var(--second-color);
+  margin: 0;
+}
+
+.home-subtitle {
+  font-weight: 700;
+  color: var(--fourth-color);
+  margin: 0;
+}
+
+.home-description {
+  color: var(--fourth-color);
+  margin-top: 1rem;
+}
+
+.home-content h1,
+.home-content h2 {
+  -webkit-text-stroke: 3.5px var(--third-color);
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  padding-block: 92px;
+  padding-inline: 92px;
+  background-color: var(--first-color);
+  border-radius: 4.125rem;
+  box-shadow: 0 2px 8px var(--third-color);
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-inline: auto;
+}
+
+.about-me-head {
+  text-align: left;
+  width: 100%;
+  margin-bottom: 92px;
+  -webkit-text-stroke: 3.5px var(--third-color);
+}
+
+.about-me-subtitle {
+  font-size: clamp(16px, 2vw, 40px);
+  font-weight: 700;
+  color: var(--fourth-color);
+  margin: 0;
+}
+
+.about-me-title {
+  font-size: clamp(36px, 6vw, 70px);
+  font-weight: 900;
+  color: var(--second-color);
+  margin: 0;
+}
+
+.about-me-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.about-me-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px dotted var(--third-color);
+  /* margin-right: 92px; */
+}
+
+.about-me-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-me-text {
+  color: var(--fourth-color);
+  font-size: clamp(14px, 2vw, 18px);
+  text-align: justify;
+  width: 69%;
+  line-height: 1.6;
+}
+
+.about-me-paragraph1 {
+  margin-bottom: 15px;
+}
+
+.about-me-paragraph2 {
+  margin-top: 15px;
+}
