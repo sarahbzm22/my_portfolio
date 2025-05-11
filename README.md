@@ -1,9 +1,9 @@
 # my_portfolio
 
-Portfolio con los trabajos que he realizado como estudiante de diseño gráfico.
+This is my portfolio, with the projects I have worked on throughout this years as a graphic design student.
 
-Mi usuario de Github es "sarahbzm22"
+My Github user is "sarahbzm22"
 
-El url a la página web de mi portfolio es "https://sarahbzm22.github.io/analisis_web/"
+The url to the web page of my portfolio is "https://sarahbzm22.github.io/my_portfolio/"
 
-El crepositorio con el código web de mi portfolio lo podéis encontrer en "https://github.com/sarahbzm22/analisis_web/blob/main/index.html"
+You will be able to find the repository with the web code of my portfolio in "https://github.com/sarahbzm22/my_portfolio.git"
