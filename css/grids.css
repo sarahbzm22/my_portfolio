@@ -6,39 +6,3 @@
   grid-auto-rows: 200px;
   grid-auto-flow: dense;
 }
-
-/* Tarjetas */
-.project-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  border-radius: 0.5rem;
-  border: 3.5px solid var(--third-color); /* Tu color personalizado */
-  cursor: pointer;
-}
-
-/* Imágenes dentro */
-.project-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-/* Hover en imagen (no en la tarjeta entera) */
-.project-item:hover img {
-  transform: scale(1.1);
-}
-
-/* Tamaños personalizados */
-.project-item.wide {
-  grid-column: span 2;
-}
-.project-item.tall {
-  grid-row: span 2;
-}
-.project-item.big {
-  grid-column: span 2;
-  grid-row: span 2;
-}

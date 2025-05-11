@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -69,6 +69,20 @@
     <!-- Poppins -->
     <!-- para fuentes de google -->
   </head>
+
+  <script>
+    document
+      .querySelector("#toggle-projects")
+      .addEventListener("change", function () {
+        if (this.checked) {
+          setTimeout(() => {
+            document
+              .querySelector(".see-more-container")
+              .scrollIntoView({ behavior: "smooth" });
+          }, 300);
+        }
+      });
+  </script>
 
   <body>
     <!-- cabecera -->
@@ -154,80 +168,83 @@
         <input type="checkbox" id="toggle-projects" hidden />
 
         <div class="projects-grid-container">
-          <nav class="projects-grid limited">
-            <a href="historia-man.html" class="project-item">
-              <img
-                src="https://ik.imagekit.io/a8ydbgcop/Fotos%20proyectos/HistoriaDelArte/Mockup%20Cartel%20%C3%81nfora.jpg?updatedAt=1746975107113"
-                alt="Poster for the MAN, the National Archaeological Museum"
-              />
-            </a>
-            <a href="illustrator-autorretrato.html" class="project-item tall">
-              <img
-                src="https://ik.imagekit.io/a8ydbgcop/Fotos%20proyectos/Illustrator/Autorretrato/Ilustrator-Autorretrato.jpg?updatedAt=1746963866789"
-                alt="Self-portrait made in Illustrator"
-              />
-            </a>
-            <a href="interactivo-kisetsu.html" class="project-item tall">
-              <img
-                src="https://ik.imagekit.io/a8ydbgcop/Fotos%20proyectos/Dise%C3%B1oInteractivo/Kisetsu/Mockup%20inicio%20de%20Kisetsu.png?updatedAt=1746975908702"
-                alt="App design for a fictional Japanese restaurant, Kisetsu"
-              />
-            </a>
-            <a href="maquetacion-calendario.html" class="project-item">
-              <img
-                src="https://ik.imagekit.io/a8ydbgcop/Fotos%20proyectos/Maquetaci%C3%B3n/Calendario/Mockup_Cubierta.jpg?updatedAt=1746963901659"
-                alt="Calendar in honor of Tatsuki Fujimoto"
-              />
-            </a>
-            <a href="photoshop-libroselva.html" class="project-item tall">
-              <img
-                src="https://ik.imagekit.io/a8ydbgcop/Fotos%20proyectos/Photoshop/PortadaLibroDeLaSelva-Mockup.png?updatedAt=1746963936747"
-                alt="Cover for The Jungle Book"
-              />
-            </a>
-            <a href="psico-distressed.html" class="project-item big">
-              <img
-                src="https://ik.imagekit.io/a8ydbgcop/Fotos%20proyectos/Psico/Distressed/MockupDistressed1.jpeg?updatedAt=1746965922761"
-                alt="Homepage design for a fictional online store taht sells denim clothing, Distressed"
-              />
-            </a>
-            <a href="taller-easyjet.html" class="project-item tall">
-              <img
-                src="https://ik.imagekit.io/a8ydbgcop/Fotos%20proyectos/Taller/easyJet/Mockups/Cartel.jpg?updatedAt=1746963984584"
-                alt="Redesign of the graphic identity of the airline easyJet"
-              />
-            </a>
-            <a href="tipografia-cartel.html" class="project-item tall">
-              <img
-                src="https://ik.imagekit.io/a8ydbgcop/Fotos%20proyectos/Tipograf%C3%ADa/Tipo-CartelTipogr%C3%A1fico.jpg?updatedAt=1746964055678"
-                alt="Typographic poster of a typeface I designed"
-              />
-            </a>
-            <a href="historia-thyssen.html" class="project-item tall">
-              <img
-                src="https://ik.imagekit.io/a8ydbgcop/Fotos%20proyectos/HistoriaDelArte/Cristo%20Resucitado.jpg?updatedAt=1746975107591"
-                alt="Illustration proposal for the Versiona Thyssen competition"
-              />
-            </a>
-            <a href="psico-distressed.html" class="project-item big">
-              <img
-                src="img6.jpg"
-                alt="Homepage design for a fictional online store taht sells denim clothing, Distressed"
-              />
-            </a>
-            <a href="psico-distressed.html" class="project-item big">
-              <img
-                src="img6.jpg"
-                alt="Homepage design for a fictional online store taht sells denim clothing, Distressed"
-              />
-            </a>
-            <a href="psico-distressed.html" class="project-item big">
-              <img
-                src="img6.jpg"
-                alt="Homepage design for a fictional online store taht sells denim clothing, Distressed"
-              />
-            </a>
-          </nav>
+          <div class="projects-grid-wrapper">
+            <nav class="projects-grid limited">
+              <a href="historia-man.html" class="project-item">
+                <img
+                  src="https://ik.imagekit.io/a8ydbgcop/Fotos%20proyectos/HistoriaDelArte/Mockup%20Cartel%20%C3%81nfora.jpg?updatedAt=1746975107113"
+                  alt="Poster for the MAN, the National Archaeological Museum"
+                />
+              </a>
+              <a href="illustrator-autorretrato.html" class="project-item tall">
+                <img
+                  src="https://ik.imagekit.io/a8ydbgcop/Fotos%20proyectos/Illustrator/Autorretrato/Ilustrator-Autorretrato.jpg?updatedAt=1746963866789"
+                  alt="Self-portrait made in Illustrator"
+                />
+              </a>
+              <a href="interactivo-kisetsu.html" class="project-item tall">
+                <img
+                  src="https://ik.imagekit.io/a8ydbgcop/Fotos%20proyectos/Dise%C3%B1oInteractivo/Kisetsu/Mockup%20inicio%20de%20Kisetsu.png?updatedAt=1746975908702"
+                  alt="App design for a fictional Japanese restaurant, Kisetsu"
+                />
+              </a>
+              <a href="maquetacion-calendario.html" class="project-item">
+                <img
+                  src="https://ik.imagekit.io/a8ydbgcop/Fotos%20proyectos/Maquetaci%C3%B3n/Calendario/Mockup_Cubierta.jpg?updatedAt=1746963901659"
+                  alt="Calendar in honor of Tatsuki Fujimoto"
+                />
+              </a>
+              <a href="photoshop-libroselva.html" class="project-item tall">
+                <img
+                  src="https://ik.imagekit.io/a8ydbgcop/Fotos%20proyectos/Photoshop/PortadaLibroDeLaSelva-Mockup.png?updatedAt=1746963936747"
+                  alt="Cover for The Jungle Book"
+                />
+              </a>
+              <a href="psico-distressed.html" class="project-item big">
+                <img
+                  src="https://ik.imagekit.io/a8ydbgcop/Fotos%20proyectos/Psico/Distressed/MockupDistressed1.jpeg?updatedAt=1746965922761"
+                  alt="Homepage design for a fictional online store taht sells denim clothing, Distressed"
+                />
+              </a>
+              <a href="taller-easyjet.html" class="project-item tall">
+                <img
+                  src="https://ik.imagekit.io/a8ydbgcop/Fotos%20proyectos/Taller/easyJet/Mockups/Cartel.jpg?updatedAt=1746963984584"
+                  alt="Redesign of the graphic identity of the airline easyJet"
+                />
+              </a>
+              <a href="tipografia-cartel.html" class="project-item tall">
+                <img
+                  src="https://ik.imagekit.io/a8ydbgcop/Fotos%20proyectos/Tipograf%C3%ADa/Tipo-CartelTipogr%C3%A1fico.jpg?updatedAt=1746964055678"
+                  alt="Typographic poster of a typeface I designed"
+                />
+              </a>
+              <a href="historia-thyssen.html" class="project-item tall">
+                <img
+                  src="https://ik.imagekit.io/a8ydbgcop/Fotos%20proyectos/HistoriaDelArte/Cristo%20Resucitado.jpg?updatedAt=1746975107591"
+                  alt="Illustration proposal for the Versiona Thyssen competition"
+                />
+              </a>
+              <a href="illustrator-metamorfosis.html" class="project-item">
+                <img
+                  src="https://ik.imagekit.io/a8ydbgcop/Fotos%20proyectos/Illustrator/Metamorfosis/Ilustrator-PosterMetamorfosis.jpg?updatedAt=1746963869682"
+                  alt="Design of an explanatory brochure and poster for Kafka's Metamorphosis for the centenary of his death"
+                />
+              </a>
+              <a href="interactivo-sockit.html" class="project-item big">
+                <img
+                  src="img6.jpg"
+                  alt="Homepage design for a fictional online store taht sells denim clothing, Distressed"
+                />
+              </a>
+              <a href="psico-distressed.html" class="project-item big">
+                <img
+                  src="img6.jpg"
+                  alt="Homepage design for a fictional online store taht sells denim clothing, Distressed"
+                />
+              </a>
+            </nav>
+            <div class="grid-fade"></div>
+          </div>
         </div>
 
         <div class="see-more-container">
