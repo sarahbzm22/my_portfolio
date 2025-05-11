@@ -1,13 +1,28 @@
 /* Estilos para pantallas grandes */
 @media (min-width: 1024px) {
   .home-title {
-    font-size: clamp(48px, 5vw, 140px);
+    font-size: clamp(48px, 8vw, 140px);
   }
   .home-subtitle {
     font-size: clamp(28px, 4vw, 45px);
   }
   .home-description {
     font-size: clamp(18px, 2vw, 24px);
+  }
+  .about-me-subtitle {
+    font-size: clamp(16px, 2vw, 40px);
+  }
+  .about-me-title {
+    font-size: clamp(36px, 6vw, 70px);
+  }
+  .about-me-text {
+    font-size: clamp(14px, 2vw, 18px);
+  }
+  .projects-subtitle {
+    font-size: clamp(16px, 2vw, 40px);
+  }
+  .projects-title {
+    font-size: clamp(36px, 6vw, 70px);
   }
 }
 /* Estilos para pantallas grandes */
