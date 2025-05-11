@@ -64,7 +64,7 @@
 /* home */
 
 /* sección de about me */
-.about-me_contact-me {
+.about-me {
   display: flex;
   flex-direction: column;
   padding-block: 92px;
@@ -305,6 +305,19 @@
 /* sección de projects */
 
 /* sección contact me */
+.contact-me {
+  display: flex;
+  flex-direction: column;
+  padding-block: 92px;
+  padding-inline: 92px;
+  background-color: var(--first-color);
+  border-radius: 4.125rem;
+  box-shadow: 0 2px 8px var(--third-color);
+  max-width: 100%;
+  box-sizing: border-box;
+  border: 3.5px solid var(--third-color);
+}
+
 .contact-me-content {
   flex-direction: row;
   justify-content: space-between;
