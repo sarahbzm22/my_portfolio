@@ -486,6 +486,11 @@
   grid-row: span 3;
 }
 
+.explication-tarjeta.tallxxl {
+  grid-column: span 2;
+  grid-row: span 6;
+}
+
 /* diseño de los apartado de explicación de los trabajos */
 
 /* footer */
