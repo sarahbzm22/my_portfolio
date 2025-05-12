@@ -167,19 +167,29 @@
 
       .back-button {
         display: inline-block;
-        margin-top: 2rem;
-        padding: 0.8rem 1.5rem;
-        background-color: var(--third-color);
-        color: var(--fourth-color);
+        background-color: var(--first-color);
+        color: var(--third-color);
+        font-weight: 700;
+        padding: 20px 62px;
+        margin-top: 72px;
+        border: 3.5px solid var(--third-color);
+        border-radius: 9999px;
+        cursor: pointer;
+        font-size: 18px;
+        text-align: center;
+        transition: background-color 0.3s ease, transform 0.3s ease,
+          color 0.3s ease;
+        position: relative;
         text-decoration: none;
-        font-weight: 600;
-        border-radius: 8px;
-        transition: background-color 0.3s ease;
       }
+      /* botón de send message */
 
+      /* animaciones del botón */
+      /* animación de hover */
       .back-button:hover {
         background-color: var(--second-color);
-        color: var(--third-color);
+        color: var(--background-color);
+        transform: scale(1.05);
       }
 
       /* footer */
@@ -293,7 +303,10 @@
           <p class="home-description">
             Looks like you got a bit lost... Let’s take you back home!
           </p>
-          <a href="index.html" class="back-button">Go to Homepage</a>
+
+          <a href="https://sarahbzm22.github.io" class="back-button"
+            >GO TO HOMEPAGE</a
+          >
         </div>
       </main>
 
