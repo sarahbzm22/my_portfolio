@@ -68,80 +68,252 @@
     />
     <!-- Poppins -->
     <!-- para fuentes de google -->
+
+    <!-- css de la página -->
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+
+      /* body */
+      .body-404 {
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins", sans-serif;
+        background-color: var(--color-background);
+        min-height: 100vh;
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 0;
+      }
+
+      .body-404::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("https://ik.imagekit.io/a8ydbgcop/Flores%20para%20decorar%20mi%20portfolio.png?updatedAt=1746818689659");
+        background-repeat: repeat-y;
+        background-size: 100vw auto;
+        background-position: top center;
+        opacity: 0.3;
+        z-index: -1;
+        pointer-events: none;
+      }
+      /* body */
+
+      /* header */
+      .main-header-404 {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 5.75rem;
+        padding-left: 11.5rem;
+        padding-right: 11.5rem;
+        box-sizing: border-box;
+      }
+
+      .profile-container-404 {
+        width: 55px;
+        height: 55px;
+        border: 3.5px solid var(--third-color);
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 2px 8px var(--third-color);
+      }
+
+      .profile-container-404 img {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+      /* header */
+
+      /* home */
+      .home-404 {
+        text-align: left;
+        padding-bottom: 184px;
+        padding-top: 239px;
+        padding-inline: 92px;
+      }
+
+      .home-img-404 {
+        position: absolute;
+        /* padding-left: 92px;
+        padding-top: 331px;
+        padding-right: 92px;
+        padding-bottom: 92px; */
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+
+      .home-img-404 img {
+        width: 40%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+      }
+
+      .home-title {
+        font-weight: 900;
+        color: var(--second-color);
+        margin: 0;
+      }
+
+      .home-subtitle {
+        font-weight: 700;
+        color: var(--fourth-color);
+        margin: 0;
+      }
+
+      .home-description {
+        color: var(--fourth-color);
+        margin-top: 1rem;
+      }
+
+      .home-content h1,
+      .home-content h2 {
+        -webkit-text-stroke: 3.5px var(--third-color);
+      }
+      /* home */
+      /* Estructura para que el footer quede abajo */
+      .wrapper {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      .main-content {
+        flex: 1;
+      }
+
+      /* Ya no usamos absolute para la imagen */
+      .home-img-404 {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .home-img-404 img {
+        width: 40%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
+      /* Botón para volver */
+      .back-button {
+        display: inline-block;
+        margin-top: 2rem;
+        padding: 0.8rem 1.5rem;
+        background-color: var(--third-color);
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+
+      .back-button:hover {
+        background-color: var(--second-color);
+      }
+    </style>
+    <!-- css de la página -->
   </head>
-  <body>
-    <!-- cabecera -->
-    <header class="main-header">
-      <!-- foto de perfil -->
-      <div class="logo-container">
-        <img
-          src="https://ik.imagekit.io/a8ydbgcop/Foto%20de%20perfil%20redondo.png?updatedAt=1746818689655"
-          alt="Sarah B."
-          id="profile-img"
-        />
-      </div>
-      <!-- foto de perfil -->
-
-      <!-- menú de navegación -->
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <!-- menú de navegación -->
-    </header>
-    <!-- cabecera -->
-
-    <main class="main-content">
-      <!-- texto home -->
-      <section class="home" id="home">
-        <div class="home-content">
-          <h2 class="home-subtitle">WELCOME TO MY</h2>
-          <h1 class="home-title">PORTFOLIO!</h1>
-          <p class="home-description">
-            Here you will get to know me and the things I have worked on.
-          </p>
+  <body class="body-404">
+    <div class="wrapper">
+      <!-- cabecera -->
+      <header class="main-header-404">
+        <div class="profile-container-404">
+          <img
+            src="https://ik.imagekit.io/a8ydbgcop/Foto%20de%20perfil%20redondo.png?updatedAt=1746818689655"
+            alt="Sarah B."
+            id="profile-img"
+          />
         </div>
-      </section>
-      <!-- texto home -->
+      </header>
+      <!-- cabecera -->
 
-      <!-- about me -->
-      <section class="about-me" id="about">
-        <div class="about-me-head">
-          <h2 class="about-me-subtitle">GET TO</h2>
-          <h1 class="about-me-title">KNOW ME!</h1>
-        </div>
-        <div class="about-me-content">
-          <div class="about-me-img">
+      <!-- contenido de la página -->
+      <main class="main-content">
+        <section class="home-404">
+          <!-- Imagen arriba -->
+          <div class="home-img-404">
             <img
-              src="https://ik.imagekit.io/a8ydbgcop/Foto%20de%20perfil.jpg?updatedAt=1746818689512"
-              alt="ilustración de Sarah B."
+              src="https://ik.imagekit.io/a8ydbgcop/Error%20404%20ilustraci%C3%B3n.png?updatedAt=1747054315354"
+              alt="Ilustración de 404"
+              class="img-404"
             />
           </div>
-          <div class="about-me-text">
-            <p class="about-me-paragraph1">
-              Hi! I'm Sarah, a graphic designer who loves creating designs that
-              are not only visually stunning but also super effective. I'm
-              currently wrapping up my second year at the University of Design,
-              Innovation, and Technology (UDIT) in Madrid, where I’m studying
-              graphic and multimedia design. I’ve gained experience in several
-              areas of design and worked with tools like Adobe Photoshop,
-              Illustrator, and InDesign.
+
+          <!-- Texto debajo -->
+          <div class="home-content">
+            <h2 class="home-subtitle">OOPS!</h2>
+            <h1 class="home-title">PAGE NOT FOUND!</h1>
+            <p class="home-description">
+              Looks like you got a bit lost... Let’s take you back home!
             </p>
-            <p class="about-me-paragraph2">
-              I'm always on the lookout for new challenges and ways to grow as a
-              designer. My ultimate goal is to help businesses and individuals
-              get their message across through eye-catching visuals, while
-              continuing to improve and always putting a little piece of myself
-              into each project.
-            </p>
+            <!-- Botón para volver al index -->
+            <a href="index.html" class="back-button">Go to Homepage</a>
           </div>
+        </section>
+      </main>
+      <!-- contenido de la página -->
+
+      <!-- footer -->
+      <footer class="main-footer">
+        <div class="footer-header">
+          <h2 class="footer-subtitle">STAY IN TOUCH AND</h2>
+          <h1 class="footer-title">FOLLOW ME!</h1>
         </div>
-      </section>
-      <!-- about me -->
-    </main>
+        <div class="footer-content">
+          <div class="footer-socials">
+            <a
+              href="https://www.instagram.com/sarahb_zm/"
+              target="_blank"
+              aria-label="Instagram"
+              class="footer-icon"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+                alt="Instagram"
+              />
+            </a>
+            <a
+              href="mailto:sbzm.jobs@gmail.com"
+              aria-label="Gmail"
+              class="footer-icon"
+            >
+              <img
+                src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg"
+                alt="Gmail"
+              />
+            </a>
+          </div>
+
+          <p class="footer-license">
+            Sarah's Portfolio © 2025 by Sarah B. Zafra is licensed under
+            <a
+              href="https://creativecommons.org/licenses/by-nc-nd/4.0/"
+              target="_blank"
+            >
+              CC BY-NC-ND 4.0
+            </a>
+          </p>
+        </div>
+      </footer>
+      <!-- footer -->
+    </div>
   </body>
 </html>
