@@ -127,13 +127,10 @@
   line-height: 1.6;
 }
 
-.about-me-paragraph1 {
-  margin-bottom: 15px;
+.about-me-text p {
+  margin-bottom: 20px;
 }
 
-.about-me-paragraph2 {
-  margin-top: 15px;
-}
 /* sección de about me */
 
 /* sección de projects */
@@ -382,6 +379,114 @@
 }
 /* animación de hover */
 /* sección contact me */
+
+/* diseño de los apartado de explicación de los trabajos */
+.explication-projects-container {
+  display: flex;
+  flex-direction: column;
+  padding-block: 92px;
+  padding-inline: 92px;
+  margin-top: 239px;
+  background-color: var(--first-color);
+  border-radius: 4.125rem;
+  box-shadow: 0 2px 8px var(--third-color);
+  max-width: 100%;
+  box-sizing: border-box;
+  border: 3.5px solid var(--third-color);
+}
+
+.explication-head {
+  text-align: left;
+  width: 100%;
+  margin-bottom: 92px;
+}
+
+.explication-subtitle {
+  font-weight: 700;
+  color: var(--fourth-color);
+  margin: 0;
+  -webkit-text-stroke: 3.5px var(--third-color);
+}
+
+.explication-title {
+  font-weight: 900;
+  color: var(--second-color);
+  margin: 0;
+  -webkit-text-stroke: 3.5px var(--third-color);
+}
+
+.explication-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.about-me-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px dotted var(--third-color);
+  /* margin-right: 92px; */
+}
+
+.about-me-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.explication-text {
+  color: var(--third-color);
+  font-weight: 400;
+  text-align: justify;
+  line-height: 1.6;
+}
+
+.explication-text p {
+  margin-bottom: 20px;
+}
+
+/* tarjetas fotos html trabajos */
+.explication-tarjeta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  border: 3.5px solid var(--third-color); /* Tu color personalizado */
+  cursor: pointer;
+}
+/* tarjetas fotos html trabajos */
+
+/* fotos de los trabajos */
+.explication-tarjeta img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+/* fotos de los trabajos */
+
+/* tamaños de las tarjetas */
+.explication-tarjeta.wide {
+  grid-column: span 2;
+}
+.explication-tarjeta.tall {
+  grid-row: span 2;
+}
+.explication-tarjeta.big {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+.explication-tarjeta.xxl {
+  grid-column: span 2;
+  grid-row: span 3;
+}
+
+/* diseño de los apartado de explicación de los trabajos */
 
 /* footer */
 .main-footer {

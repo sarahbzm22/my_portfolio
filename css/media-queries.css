@@ -18,6 +18,15 @@
   .about-me-text {
     font-size: clamp(14px, 2vw, 18px);
   }
+  .explication-subtitle {
+    font-size: clamp(16px, 2vw, 40px);
+  }
+  .explication-title {
+    font-size: clamp(36px, 6vw, 70px);
+  }
+  .explication-text {
+    font-size: clamp(14px, 2vw, 18px);
+  }
   .footer-subtitle {
     font-size: clamp(16px, 2vw, 45px);
   }
