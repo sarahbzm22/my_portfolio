@@ -18,11 +18,11 @@
   .about-me-text {
     font-size: clamp(14px, 2vw, 18px);
   }
-  .projects-subtitle {
-    font-size: clamp(16px, 2vw, 40px);
+  .footer-subtitle {
+    font-size: clamp(16px, 2vw, 45px);
   }
-  .projects-title {
-    font-size: clamp(36px, 6vw, 70px);
+  .footer-title {
+    font-size: clamp(36px, 6vw, 140px);
   }
 }
 /* Estilos para pantallas grandes */

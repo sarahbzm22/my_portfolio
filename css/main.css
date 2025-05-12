@@ -382,3 +382,82 @@
 }
 /* animación de hover */
 /* sección contact me */
+
+/* footer */
+.main-footer {
+  background-color: var(--first-color);
+  border: 3.5px solid var(--third-color);
+  border-top-left-radius: 4.125rem;
+  border-top-right-radius: 4.125rem;
+  box-shadow: 0 2px 8px var(--third-color);
+  padding: 92px 92px;
+  /* text-align: center; */
+  margin-top: 92px;
+  box-sizing: border-box;
+  display: flex;
+  place-content: space-between;
+  /* flex-direction: row; */
+}
+
+/* .footer-header {
+  margin-bottom: 32px;
+} */
+
+.footer-header h1,
+.footer-header h2 {
+  -webkit-text-stroke: 3.5px var(--third-color);
+}
+
+.footer-subtitle {
+  font-weight: 700;
+  color: var(--fourth-color);
+  margin: 0;
+}
+
+.footer-title {
+  font-weight: 900;
+  color: var(--second-color);
+  margin: 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  align-items: center;
+  justify-content: right;
+  gap: 32px;
+}
+
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+
+.footer-icon img {
+  width: 65px;
+  height: auto;
+  transition: transform 0.3s ease;
+  filter: invert(18%) sepia(14%) saturate(1346%) hue-rotate(202deg)
+    brightness(94%) contrast(92%);
+}
+
+.footer-icon img:hover {
+  transform: scale(1.2);
+  filter: none;
+}
+
+.footer-license {
+  font-size: 14px;
+  color: var(--third-color);
+  text-align: right;
+}
+
+.footer-license a {
+  color: var(--third-color);
+  text-decoration: underline;
+}
+
+/* footer */
