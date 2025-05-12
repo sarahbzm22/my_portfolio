@@ -3,16 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SBZM Portfolio</title>
+    <title>404 - Page Not Found</title>
+
+    <!-- Metadatos -->
     <meta
       name="description"
-      content="Aquí podrás ver todos los trabajos que he realizado como diseñadora gráfica."
+      content="Página de error 404 - Portfolio de Sarah B."
     />
     <meta name="author" content="Sarah B." />
-    <meta name="keywords" content="portfolio, diseño gráfico, trabajos" />
-    <link rel="stylesheet" href="css/index.css" />
+    <meta name="keywords" content="portfolio, diseño gráfico, error 404" />
 
-    <!--para el favicon-->
+    <!-- Favicons -->
     <link
       rel="icon"
       type="image/png"
@@ -31,65 +32,47 @@
       href="/assets/icons/favicon_perfil/apple-touch-icon.png"
     />
     <link rel="manifest" href="/assets/icons/favicon_perfil/site.webmanifest" />
-    <!--para el favicon-->
 
-    <!-- para símbolos -->
-    <script
-      src="https://kit.fontawesome.com/b1666dd585.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- para símbolos -->
-
-    <!-- para fuentes de google -->
-    <!-- Montserrat -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Tipografías de Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- Montserrat -->
-
-    <!-- Roboto -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <!-- Roboto -->
-
-    <!-- Poppins -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- Poppins -->
-    <!-- para fuentes de google -->
 
-    <!-- css de la página -->
+    <!-- Estilos embebidos -->
     <style>
+      :root {
+        --color-background: #232946;
+        --first-color: #eebbc3;
+        --second-color: #b8c1ec;
+        --third-color: #121629;
+        --fourth-color: #fffffe;
+      }
+
       html {
         scroll-behavior: smooth;
       }
 
-      /* body */
-      .body-404 {
+      body.body-404 {
         margin: 0;
         padding: 0;
         font-family: "Poppins", sans-serif;
         background-color: var(--color-background);
-        min-height: 100vh;
-        overflow-x: hidden;
         display: flex;
         flex-direction: column;
+        min-height: 100vh;
         position: relative;
-        z-index: 0;
       }
 
-      .body-404::before {
+      body.body-404::before {
         content: "";
         position: absolute;
         top: 0;
@@ -104,10 +87,8 @@
         z-index: -1;
         pointer-events: none;
       }
-      /* body */
 
-      /* header */
-      .main-header-404 {
+      header.main-header-404 {
         position: fixed;
         top: 0;
         left: 0;
@@ -116,9 +97,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 5.75rem;
-        padding-left: 11.5rem;
-        padding-right: 11.5rem;
+        padding: 5.75rem 11.5rem 0 11.5rem;
         box-sizing: border-box;
       }
 
@@ -132,93 +111,66 @@
       }
 
       .profile-container-404 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
         border-radius: 50%;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        display: block;
-      }
-      /* header */
-
-      /* home */
-      .home-404 {
-        text-align: left;
-        padding-bottom: 184px;
-        padding-top: 239px;
-        padding-inline: 92px;
-      }
-
-      .home-img-404 {
-        position: absolute;
-        /* padding-left: 92px;
-        padding-top: 331px;
-        padding-right: 92px;
-        padding-bottom: 92px; */
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-      }
-
-      .home-img-404 img {
-        width: 40%;
-        height: auto;
-        object-fit: cover;
         display: block;
       }
 
-      .home-title {
-        font-weight: 900;
-        color: var(--second-color);
-        margin: 0;
-      }
-
-      .home-subtitle {
-        font-weight: 700;
-        color: var(--fourth-color);
-        margin: 0;
-      }
-
-      .home-description {
-        color: var(--fourth-color);
-        margin-top: 1rem;
-      }
-
-      .home-content h1,
-      .home-content h2 {
-        -webkit-text-stroke: 3.5px var(--third-color);
-      }
-      /* home */
-      /* Estructura para que el footer quede abajo */
-      .wrapper {
+      main.main-content {
         display: flex;
         flex-direction: column;
-        min-height: 100vh;
-      }
-
-      .main-content {
+        margin: 11.5rem;
+        margin-top: 14rem;
         flex: 1;
       }
 
-      /* Ya no usamos absolute para la imagen */
       .home-img-404 {
         text-align: center;
-        margin-bottom: 2rem;
+        margin-bottom: 3rem;
       }
 
       .home-img-404 img {
-        width: 40%;
+        width: 60%;
+        max-width: 800px;
         height: auto;
         display: block;
         margin: 0 auto;
       }
 
-      /* Botón para volver */
+      .home-content {
+        text-align: center;
+      }
+
+      .home-subtitle {
+        font-size: 45px;
+        font-weight: 700;
+        color: var(--fourth-color);
+        margin: 0;
+        -webkit-text-stroke: 3.5px var(--third-color);
+      }
+
+      .home-title {
+        font-size: 100px;
+        font-weight: 900;
+        color: var(--second-color);
+        margin: 0.5rem 0;
+        -webkit-text-stroke: 3.5px var(--third-color);
+      }
+
+      .home-description {
+        color: var(--fourth-color);
+        font-size: 24px;
+        margin-top: 1rem;
+      }
+
       .back-button {
         display: inline-block;
         margin-top: 2rem;
         padding: 0.8rem 1.5rem;
         background-color: var(--third-color);
-        color: white;
+        color: var(--fourth-color);
         text-decoration: none;
         font-weight: 600;
         border-radius: 8px;
@@ -227,13 +179,93 @@
 
       .back-button:hover {
         background-color: var(--second-color);
+        color: var(--third-color);
       }
+
+      /* footer */
+      .main-footer {
+        background-color: var(--first-color);
+        border: 3.5px solid var(--third-color);
+        border-top-left-radius: 4.125rem;
+        border-top-right-radius: 4.125rem;
+        box-shadow: 0 2px 8px var(--third-color);
+        padding: 92px 92px;
+        /* text-align: center; */
+        margin-top: 92px;
+        box-sizing: border-box;
+        display: flex;
+        place-content: space-between;
+        /* flex-direction: row; */
+      }
+
+      /* .footer-header {
+  margin-bottom: 32px;
+} */
+
+      .footer-header h1,
+      .footer-header h2 {
+        -webkit-text-stroke: 3.5px var(--third-color);
+      }
+
+      .footer-subtitle {
+        font-weight: 700;
+        color: var(--fourth-color);
+        margin: 0;
+        font-size: clamp(16px, 2vw, 45px);
+      }
+
+      .footer-title {
+        font-weight: 900;
+        color: var(--second-color);
+        margin: 0;
+        font-size: clamp(36px, 6vw, 140px);
+      }
+
+      .footer-content {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        align-items: center;
+        justify-content: right;
+        gap: 32px;
+      }
+
+      .footer-socials {
+        display: flex;
+        justify-content: center;
+        gap: 70px;
+      }
+
+      .footer-icon img {
+        width: 65px;
+        height: auto;
+      }
+
+      .footer-icon img:hover {
+        transform: scale(1.2);
+        filter: none;
+      }
+
+      .footer-license {
+        font-size: 14px;
+        color: var(--third-color);
+        text-align: right;
+      }
+
+      .footer-license a {
+        color: var(--third-color);
+        text-decoration: underline;
+      }
+
+      /* footer */
     </style>
-    <!-- css de la página -->
   </head>
+
   <body class="body-404">
+    <!-- Contenedor principal -->
     <div class="wrapper">
-      <!-- cabecera -->
+      <!-- Cabecera fija -->
       <header class="main-header-404">
         <div class="profile-container-404">
           <img
@@ -243,47 +275,42 @@
           />
         </div>
       </header>
-      <!-- cabecera -->
 
-      <!-- contenido de la página -->
+      <!-- Contenido principal -->
       <main class="main-content">
-        <section class="home-404">
-          <!-- Imagen arriba -->
-          <div class="home-img-404">
-            <img
-              src="https://ik.imagekit.io/a8ydbgcop/Error%20404%20ilustraci%C3%B3n.png?updatedAt=1747054315354"
-              alt="Ilustración de 404"
-              class="img-404"
-            />
-          </div>
+        <!-- Ilustración de error 404 -->
+        <div class="home-img-404">
+          <img
+            src="https://ik.imagekit.io/a8ydbgcop/Error%20404%20ilustraci%C3%B3n.png?updatedAt=1747054315354"
+            alt="Ilustración 404"
+          />
+        </div>
 
-          <!-- Texto debajo -->
-          <div class="home-content">
-            <h2 class="home-subtitle">OOPS!</h2>
-            <h1 class="home-title">PAGE NOT FOUND!</h1>
-            <p class="home-description">
-              Looks like you got a bit lost... Let’s take you back home!
-            </p>
-            <!-- Botón para volver al index -->
-            <a href="index.html" class="back-button">Go to Homepage</a>
-          </div>
-        </section>
+        <!-- Texto y botón -->
+        <div class="home-content">
+          <h2 class="home-subtitle">OOPS!</h2>
+          <h1 class="home-title">PAGE NOT FOUND!</h1>
+          <p class="home-description">
+            Looks like you got a bit lost... Let’s take you back home!
+          </p>
+          <a href="index.html" class="back-button">Go to Homepage</a>
+        </div>
       </main>
-      <!-- contenido de la página -->
 
-      <!-- footer -->
+      <!-- Footer (intacto) -->
       <footer class="main-footer">
         <div class="footer-header">
           <h2 class="footer-subtitle">STAY IN TOUCH AND</h2>
           <h1 class="footer-title">FOLLOW ME!</h1>
         </div>
+
         <div class="footer-content">
           <div class="footer-socials">
             <a
               href="https://www.instagram.com/sarahb_zm/"
               target="_blank"
-              aria-label="Instagram"
               class="footer-icon"
+              aria-label="Instagram"
             >
               <img
                 src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
@@ -292,8 +319,8 @@
             </a>
             <a
               href="mailto:sbzm.jobs@gmail.com"
-              aria-label="Gmail"
               class="footer-icon"
+              aria-label="Gmail"
             >
               <img
                 src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/gmail.svg"
@@ -307,13 +334,11 @@
             <a
               href="https://creativecommons.org/licenses/by-nc-nd/4.0/"
               target="_blank"
+              >CC BY-NC-ND 4.0</a
             >
-              CC BY-NC-ND 4.0
-            </a>
           </p>
         </div>
       </footer>
-      <!-- footer -->
     </div>
   </body>
 </html>
