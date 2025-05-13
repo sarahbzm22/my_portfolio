@@ -16,7 +16,6 @@
 .main-nav ul {
   display: flex;
   list-style: none;
-  gap: clamp(1rem, 8vw, 7.75rem);
   margin: 0;
   padding: 0;
   justify-content: center;

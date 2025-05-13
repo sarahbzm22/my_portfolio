@@ -1,7 +1,11 @@
 /* Estilos para pantallas grandes */
 @media (min-width: 1024px) {
   .main-nav {
-    width: 40.625rem;
+    width: 31.25rem;
+  }
+
+  .main-nav-ul {
+    gap: clamp(1rem, 8vw, 7.75rem);
   }
 
   .about-me {
@@ -332,7 +336,8 @@
   }
 
   .contact-me {
-    padding-block: 1.5rem;
+    padding-block-end: 1.5rem;
+    padding-block-start: 2.75rem;
     padding-inline: 2.75rem;
     border-radius: 3.125rem;
   }
