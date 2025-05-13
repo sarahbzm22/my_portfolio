@@ -5,7 +5,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: var(--font-text);
   background-color: var(--color-background);
   min-height: 100vh;
   overflow-x: hidden;
@@ -29,6 +29,23 @@ body::before {
   opacity: 0.3;
   z-index: -1;
   pointer-events: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1,
+h2 {
+  font-family: var(--font-text);
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 main {

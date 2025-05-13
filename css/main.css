@@ -56,11 +56,6 @@
   color: var(--fourth-color);
   margin-top: 1rem;
 }
-
-.home-content h1,
-.home-content h2 {
-  -webkit-text-stroke: 3.5px var(--third-color);
-}
 /* home */
 
 /* sección de about me */
@@ -68,7 +63,6 @@
   display: flex;
   flex-direction: column;
   padding-block: 92px;
-  padding-inline: 92px;
   background-color: var(--first-color);
   border-radius: 4.125rem;
   box-shadow: 0 2px 8px var(--third-color);
@@ -81,7 +75,7 @@
   text-align: left;
   width: 100%;
   margin-bottom: 92px;
-  -webkit-text-stroke: 3.5px var(--third-color);
+  padding-inline: 92px;
 }
 
 .about-me-subtitle {
@@ -98,15 +92,15 @@
 
 .about-me-content {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 55px;
   align-items: center;
   width: 100%;
 }
 
 .about-me-img {
-  width: 250px;
-  height: 250px;
+  width: 15.625rem;
+  height: 15.625rem;
   border-radius: 50%;
   overflow: hidden;
   border: 4px dotted var(--third-color);
@@ -136,7 +130,6 @@
 /* sección de projects */
 .projects-section {
   padding-block: 92px;
-  padding-inline: 92px;
   width: 100%;
   box-sizing: border-box;
 }
@@ -145,6 +138,7 @@
 .projects-header {
   text-align: left;
   margin-bottom: 92px;
+  padding-inline: 92px;
 }
 
 .projects-subtitle {
@@ -157,11 +151,6 @@
   font-weight: 900;
   color: var(--second-color);
   margin: 0;
-  -webkit-text-stroke: 3.5px var(--third-color);
-}
-
-.projects-header h1,
-.projects-header h2 {
   -webkit-text-stroke: 3.5px var(--third-color);
 }
 /* cabecera de projects */
@@ -315,6 +304,12 @@
   border: 3.5px solid var(--third-color);
 }
 
+.contact-me-head {
+  text-align: left;
+  width: 100%;
+  margin-bottom: 92px;
+}
+
 .contact-me-content {
   flex-direction: row;
   justify-content: space-between;
@@ -405,14 +400,12 @@
   font-weight: 700;
   color: var(--fourth-color);
   margin: 0;
-  -webkit-text-stroke: 3.5px var(--third-color);
 }
 
 .explication-title {
   font-weight: 900;
   color: var(--second-color);
   margin: 0;
-  -webkit-text-stroke: 3.5px var(--third-color);
 }
 
 .explication-content {
@@ -421,21 +414,6 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-}
-
-.about-me-img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 4px dotted var(--third-color);
-  /* margin-right: 92px; */
-}
-
-.about-me-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 
 .explication-text {
@@ -470,27 +448,36 @@
 }
 /* fotos de los trabajos */
 
-/* tamaños de las tarjetas */
-.explication-tarjeta.wide {
-  grid-column: span 2;
-}
-.explication-tarjeta.tall {
-  grid-row: span 2;
-}
-.explication-tarjeta.big {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-.explication-tarjeta.xxl {
-  grid-column: span 2;
-  grid-row: span 3;
+/* botón de volver */
+.home-content {
+  text-align: center;
 }
 
-.explication-tarjeta.tallxxl {
-  grid-column: span 2;
-  grid-row: span 6;
+.back-button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--third-color);
+  font-weight: 700;
+  padding: 20px 62px;
+  margin-top: 72px;
+  border: 3.5px solid var(--third-color);
+  border-radius: 9999px;
+  cursor: pointer;
+  font-size: 18px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+  position: relative;
+  text-decoration: none;
 }
+/* botón de volver */
 
+/* animaciones del botón */
+/* animación de hover */
+.back-button:hover {
+  background-color: var(--second-color);
+  color: var(--background-color);
+  transform: scale(1.05);
+}
 /* diseño de los apartado de explicación de los trabajos */
 
 /* footer */
@@ -513,11 +500,6 @@
   margin-bottom: 32px;
 } */
 
-.footer-header h1,
-.footer-header h2 {
-  -webkit-text-stroke: 3.5px var(--third-color);
-}
-
 .footer-subtitle {
   font-weight: 700;
   color: var(--fourth-color);
@@ -528,16 +510,6 @@
   font-weight: 900;
   color: var(--second-color);
   margin: 0;
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-content: flex-end;
-  align-items: center;
-  justify-content: right;
-  gap: 32px;
 }
 
 .footer-socials {

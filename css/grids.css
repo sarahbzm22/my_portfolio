@@ -8,3 +8,29 @@
   grid-auto-flow: dense;
 }
 /* contenedor de los grid */
+
+/* grids.css */
+
+/* Contenedor principal con padding adaptable */
+.wrapper {
+  padding: clamp(1rem, 5vw, 6rem);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Sistema base de columnas si usas grid */
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}

@@ -1,7 +1,10 @@
+/* theme.css */
 :root {
   --color-background: #232946;
   --first-color: #eebbc3;
   --second-color: #b8c1ec;
   --third-color: #121629;
   --fourth-color: #fffffe;
+
+  --font-text: "Poppins", sans-serif;
 }

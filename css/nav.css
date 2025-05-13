@@ -3,22 +3,25 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
   border: 3.5px solid var(--third-color);
   border-radius: 4.125rem;
-  width: 650px;
-  height: 55px;
+  max-width: 40.625rem;
+  height: 3.438rem;
   box-shadow: 0 2px 8px var(--third-color);
   background-color: var(--first-color);
+  flex-wrap: wrap;
 }
 
 .main-nav ul {
   display: flex;
   list-style: none;
-  gap: 124px;
+  gap: clamp(1rem, 8vw, 7.75rem);
   margin: 0;
   padding: 0;
+  justify-content: center;
+  width: 100%;
 }
 
 /* .main-nav li {
