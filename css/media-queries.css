@@ -1,5 +1,8 @@
 /* Estilos para pantallas grandes */
 @media (min-width: 1024px) {
+  .main-nav {
+    width: 40.625rem;
+  }
   /* tamaños de las tarjetas */
   .explication-tarjeta.wide {
     grid-column: span 2;
@@ -75,7 +78,13 @@
 /* Pantallas medianas */
 @media (max-width: 1023px) and (min-width: 772px) {
   .main-header {
-    padding: 4rem 6rem;
+    padding: 2rem 4rem;
+  }
+
+  .main-nav {
+    width: 100%;
+    max-width: 31.25rem;
+    margin: 0 auto;
   }
 
   .home {
@@ -169,6 +178,10 @@
     flex-direction: column;
     gap: 2rem;
     padding: 2rem;
+  }
+
+  .main-nav {
+    display: none;
   }
 
   .home {
