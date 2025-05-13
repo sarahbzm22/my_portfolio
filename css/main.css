@@ -62,9 +62,7 @@
 .about-me {
   display: flex;
   flex-direction: column;
-  padding-block: 92px;
   background-color: var(--first-color);
-  border-radius: 4.125rem;
   box-shadow: 0 2px 8px var(--third-color);
   max-width: 100%;
   box-sizing: border-box;
@@ -74,8 +72,6 @@
 .about-me-head {
   text-align: left;
   width: 100%;
-  margin-bottom: 92px;
-  padding-inline: 92px;
 }
 
 .about-me-subtitle {
@@ -93,14 +89,11 @@
 .about-me-content {
   display: flex;
   flex-direction: column;
-  gap: 55px;
   align-items: center;
   width: 100%;
 }
 
 .about-me-img {
-  width: 15.625rem;
-  height: 15.625rem;
   border-radius: 50%;
   overflow: hidden;
   border: 4px dotted var(--third-color);
@@ -116,7 +109,7 @@
 .about-me-text {
   color: var(--third-color);
   font-weight: 400;
-  text-align: justify;
+  text-align: left;
   width: 69%;
   line-height: 1.6;
 }
@@ -138,7 +131,6 @@
 .projects-header {
   text-align: left;
   margin-bottom: 92px;
-  padding-inline: 92px;
 }
 
 .projects-subtitle {
@@ -217,7 +209,7 @@
   border: 3.5px solid var(--third-color);
   border-radius: 9999px;
   cursor: pointer;
-  font-size: 18px;
+
   text-align: center;
   transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
   position: relative;
@@ -294,10 +286,7 @@
 .contact-me {
   display: flex;
   flex-direction: column;
-  padding-block: 92px;
-  padding-inline: 92px;
   background-color: var(--first-color);
-  border-radius: 4.125rem;
   box-shadow: 0 2px 8px var(--third-color);
   max-width: 100%;
   box-sizing: border-box;
@@ -358,7 +347,7 @@
   border: 3.5px solid var(--third-color);
   border-radius: 9999px;
   cursor: pointer;
-  font-size: 18px;
+
   text-align: center;
   transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
   position: relative;
@@ -379,11 +368,8 @@
 .explication-projects-container {
   display: flex;
   flex-direction: column;
-  padding-block: 92px;
-  padding-inline: 92px;
   margin-top: 239px;
   background-color: var(--first-color);
-  border-radius: 4.125rem;
   box-shadow: 0 2px 8px var(--third-color);
   max-width: 100%;
   box-sizing: border-box;
@@ -393,7 +379,6 @@
 .explication-head {
   text-align: left;
   width: 100%;
-  margin-bottom: 92px;
 }
 
 .explication-subtitle {
@@ -419,7 +404,7 @@
 .explication-text {
   color: var(--third-color);
   font-weight: 400;
-  text-align: justify;
+  text-align: left;
   line-height: 1.6;
 }
 
@@ -484,8 +469,6 @@
 .main-footer {
   background-color: var(--first-color);
   border: 3.5px solid var(--third-color);
-  border-top-left-radius: 4.125rem;
-  border-top-right-radius: 4.125rem;
   box-shadow: 0 2px 8px var(--third-color);
   padding: 92px 92px;
   /* text-align: center; */
@@ -534,7 +517,6 @@
 .footer-license {
   font-size: 14px;
   color: var(--third-color);
-  text-align: right;
 }
 
 .footer-license a {

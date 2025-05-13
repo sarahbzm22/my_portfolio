@@ -3,6 +3,47 @@
   .main-nav {
     width: 40.625rem;
   }
+
+  .about-me {
+    padding-block: 5.75rem;
+    border-radius: 4.125rem;
+  }
+
+  .about-me-head {
+    padding-inline: 5.75rem;
+  }
+
+  .about-me-content {
+    gap: 5.75rem;
+  }
+  .about-me-img {
+    width: 15.625rem;
+    height: 15.625rem;
+  }
+  .projects-header {
+    padding-inline: 5.75rem;
+  }
+  .see-more-button {
+    font-size: clamp(14px, 2vw, 18px);
+  }
+  .contact-me {
+    padding-block: 5.75rem;
+    padding-inline: 5.75rem;
+    border-radius: 4.125rem;
+  }
+  .sen-message-button {
+    font-size: clamp(14px, 2vw, 18px);
+  }
+
+  .explication-projects-container {
+    padding-block: 92px;
+    padding-inline: 92px;
+    border-radius: 4.125rem;
+  }
+
+  .explication-head {
+    margin-bottom: 5.75rem;
+  }
   /* tamaños de las tarjetas */
   .explication-tarjeta.wide {
     grid-column: span 2;
@@ -72,6 +113,24 @@
     justify-content: right;
     gap: 32px;
   }
+  .footer-license {
+    text-align: right;
+  }
+  .footer-licence a {
+    color: var(--third-color);
+    text-decoration: none;
+    font-size: clamp(12px, 2vw, 14px);
+    font-weight: 700;
+  }
+  .footer-licence a:hover {
+    color: var(--fourth-color);
+  }
+  .main-footer {
+    flex-direction: row;
+    padding: 4rem 6rem;
+    border-top-left-radius: 4.125rem;
+    border-top-right-radius: 4.125rem;
+  }
 }
 /* Estilos para pantallas grandes */
 
@@ -97,6 +156,47 @@
 
   .main-nav {
     gap: 4rem;
+  }
+
+  .about-me {
+    padding-block: 5.75rem;
+    border-radius: 4.125rem;
+  }
+
+  .about-me-head {
+    padding-inline: 5.75rem;
+  }
+
+  .about-me-content {
+    gap: 5.75rem;
+  }
+
+  .about-me-img {
+    width: 15.625rem;
+    height: 15.625rem;
+  }
+
+  .projects-header {
+    padding-inline: 5.75rem;
+  }
+
+  .see-more-button {
+    font-size: clamp(14px, 2vw, 18px);
+  }
+
+  .contact-me {
+    padding-block: 5.75rem;
+    padding-inline: 5.75rem;
+    border-radius: 4.125rem;
+  }
+  .explication-projects-container {
+    padding-block: 92px;
+    padding-inline: 92px;
+    border-radius: 4.125rem;
+  }
+
+  .explication-head {
+    margin-bottom: 5.75rem;
   }
 
   /* tamaños de las tarjetas */
@@ -159,6 +259,8 @@
   .main-footer {
     flex-direction: row;
     padding: 4rem 6rem;
+    border-top-left-radius: 4.125rem;
+    border-top-right-radius: 4.125rem;
   }
   .footer-content {
     display: flex;
@@ -168,6 +270,9 @@
     align-items: center;
     justify-content: right;
     gap: 32px;
+  }
+  .footer-license {
+    text-align: right;
   }
 }
 /* Pantallas medianas */
@@ -185,19 +290,64 @@
   }
 
   .home {
-    padding: 2rem;
+    padding: 2rem 0;
   }
 
   main {
-    margin: 92px 3.5rem;
+    margin: 92px 1rem;
   }
 
   .main-nav {
     display: none;
   }
 
+  .about-me {
+    padding-block-start: 2.75rem;
+    padding-block-end: 1.5rem;
+    border-radius: 3.125rem;
+  }
+
+  .about-me-head {
+    padding-inline: 2.75rem;
+    margin-bottom: 2.75rem;
+  }
+
+  .about-me-content {
+    gap: 2.5rem;
+  }
+
+  .about-me-img {
+    width: 10.625rem;
+    height: 10.625rem;
+  }
+
+  .projects-header {
+    padding-inline: 2.75rem;
+  }
+
+  .see-more-button {
+    font-size: clamp(14px, 2vw, 18px);
+  }
+
+  .contact-me {
+    padding-block: 1.5rem;
+    padding-inline: 2.75rem;
+    border-radius: 3.125rem;
+  }
+
+  .send-message-button {
+    font-size: clamp(14px, 2vw, 18px);
+  }
+
   .explication-projects-container {
     margin-top: 110px;
+    padding-block: 2.75rem;
+    padding-inline: 2.75rem;
+    border-radius: 3.125rem;
+  }
+
+  .explication-head {
+    margin-bottom: 2.75rem;
   }
 
   .home-title {
@@ -205,10 +355,10 @@
     -webkit-text-stroke: 3.5px var(--third-color);
   }
   .home-subtitle {
-    font-size: clamp(28px, 4vw, 45px);
+    font-size: clamp(15px, 4vw, 45px);
   }
   .home-description {
-    font-size: clamp(18px, 2vw, 24px);
+    font-size: clamp(14px, 2vw, 24px);
   }
   .about-me-subtitle {
     font-size: clamp(16px, 2vw, 40px);
@@ -218,6 +368,9 @@
     -webkit-text-stroke: 3.5px var(--third-color);
   }
   .about-me-text {
+    font-size: clamp(12px, 2vw, 18px);
+  }
+  .sen-message-button {
     font-size: clamp(14px, 2vw, 18px);
   }
   .explication-subtitle {
@@ -243,7 +396,7 @@
   }
   .explication-tarjeta.xxl {
     grid-column: span 2;
-    grid-row: span 2;
+    grid-row: span 1;
   }
   .explication-tarjeta.tallxxl {
     grid-column: span 2;
@@ -263,6 +416,8 @@
     padding: 4rem;
     text-align: center;
     gap: 40px;
+    border-top-left-radius: 3.125rem;
+    border-top-right-radius: 3.125rem;
   }
 
   .footer-content {
@@ -277,6 +432,9 @@
   .footer-socials {
     gap: 2rem;
     justify-content: center;
+  }
+  .footer-license {
+    text-align: center;
   }
 }
 
