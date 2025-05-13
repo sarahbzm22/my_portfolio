@@ -1,11 +1,11 @@
 /* Estilos para pantallas grandes */
 @media (min-width: 1024px) {
   .main-nav {
-    width: 31.25rem;
+    width: 26.25rem;
   }
 
-  .main-nav-ul {
-    gap: clamp(1rem, 8vw, 7.75rem);
+  .main-nav ul {
+    gap: clamp(0px, 4rem, 6rem);
   }
 
   .about-me {
@@ -81,7 +81,6 @@
   }
   .about-me-subtitle {
     font-size: clamp(16px, 2vw, 40px);
-    -webkit-text-stroke: 3.5px var(--third-color);
   }
   .about-me-title {
     font-size: clamp(36px, 6vw, 70px);
@@ -92,7 +91,6 @@
   }
   .explication-subtitle {
     font-size: clamp(16px, 2vw, 40px);
-    -webkit-text-stroke: 3.5px var(--third-color);
   }
   .explication-title {
     font-size: clamp(36px, 6vw, 70px);
@@ -103,7 +101,6 @@
   }
   .footer-subtitle {
     font-size: clamp(16px, 2vw, 45px);
-    -webkit-text-stroke: 3.5px var(--third-color);
   }
   .footer-title {
     font-size: clamp(36px, 6vw, 140px);
@@ -142,25 +139,23 @@
 /* Pantallas medianas */
 @media (max-width: 1023px) and (min-width: 772px) {
   .main-header {
-    padding: 2rem 4rem;
+    padding: 5rem 6.5rem;
   }
 
   .main-nav {
     width: 100%;
-    max-width: 31.25rem;
-    margin: 0 auto;
+    max-width: 20.25rem;
+    gap: 4rem;
   }
-
+  .main-nav ul {
+    gap: clamp(0px, 3rem, 4rem);
+  }
   .home {
     padding: 8rem 6rem;
   }
 
   main {
     margin: 92px 6.5rem;
-  }
-
-  .main-nav {
-    gap: 4rem;
   }
 
   .about-me {
