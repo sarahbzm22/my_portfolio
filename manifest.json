@@ -1,6 +1,7 @@
 {
   "name": "Sarah's Portfolio",
   "short_name": "SBZM Portfolio",
+  "start_url": "https://sarahbzm22.github.io/",
   "icons": [
     {
       "src": "./assets/icons/myfavicon/web-app-manifest-192x192.png",
